@@ -4,9 +4,10 @@
     <h2>Comments</h2>
     <ul>
         {% for comment in comments %}
-                <li>{{ comment.id }}.{{ comment }}</li>
+            <li>{{ comment }}</li>
         {% endfor %}
     </ul>
+
 
     <h2>add comment</h2>
         
@@ -15,5 +16,5 @@
             {{ form }}
             <button type="submit">⩥</button>
         </form>
-        
+        <a href="{% url 'user_section' %}">Back To user</a>
 {% endblock %}
